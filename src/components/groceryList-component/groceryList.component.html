@@ -1,0 +1,12 @@
+<h1 class="groceryTitle">Grocery List</h1>
+
+<div *ngFor="let grocery of grocerys" class="groceryList">
+  <div class="imageWrapper"><img [src]="getIconUrl(grocery.category)" ngClass="{{grocery.category}}"></div>
+  <div class="groceryListItem">
+    <div><label>Category: </label>{{grocery.category}}</div>
+    <div><label>item: </label>{{grocery.item}}</div>
+    <div><label>type: </label>{{grocery.type}}</div>
+    <div><label>brand: </label>{{grocery.brand}}</div>
+    <div><label>qty: </label>{{grocery.qty}}</div>
+  </div>
+</div>

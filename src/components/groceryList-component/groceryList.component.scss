@@ -1,0 +1,67 @@
+app-grocery-list{
+  .groceryTitle{
+    text-align: center;
+    margin: 0px;
+  }
+  .groceryList{
+    width: 45%;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid grey;
+    position: relative;
+    @media(max-width:1024px){
+      display: block;
+      width: 98%;
+      margin: 20px 0;
+    }
+    .imageWrapper{
+      display: inline-block;
+      @media(max-width:1024px){
+        display: block;
+      }
+      img{
+        height: 200px;
+        width: 200px;
+        vertical-align: middle;
+        @media(max-width:1024px){
+          height: 200px;
+          width: 100%;
+        }
+      }
+    }
+    .groceryListItem{
+      display: inline-block;
+      position: absolute;
+      font-size: 2em;
+      margin: 0 auto;
+      text-align: center;
+      width: calc(100% - 200px);
+      @media(max-width:1024px){
+        display: block;
+        position: inherit;
+        width: 100%;
+      }
+    }
+  }
+
+  .fruit{
+    background-color: red;
+  }
+
+  .dairy{
+    background-color: aquamarine;
+  }
+
+  .beverage{
+    background-color: chocolate;
+  }
+
+  .pasta{
+    background-color: chartreuse;
+  }
+
+  .dessert{
+    background-color: deeppink;
+  }
+
+}
