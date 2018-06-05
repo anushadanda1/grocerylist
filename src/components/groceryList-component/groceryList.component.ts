@@ -7,8 +7,15 @@ import {} from '../../assets/images/'
   styleUrls: ['./groceryList.component.scss']
 })
 export class GroceryListComponent {
-  title = 'app works!';
+  title = 'Grocery List';
+  categoryTitle= 'Category: ';
+  itemTitle= 'Item: ';
+  typeTitle= 'Type: ';
+  brandTitle= 'Brand: ';
+  qtyTitle= 'Quantity: ';
 
+
+  // variable contains grocery list data
   grocerys = [
     {
       'category': 'fruit',
@@ -68,6 +75,7 @@ export class GroceryListComponent {
     }
   ];
 
+  // below function is used fetch icon images.
   private getIconUrl(type: string): string {
     let url: string;
     if (type.toLowerCase()) {
